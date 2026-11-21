@@ -1,0 +1,560 @@
+{
+  "sequenceCounter": 7,
+  "issues": [
+    {
+      "id": "979aeef3-2ad9-42a5-b3d2-8cb6a034b6b2",
+      "trackingCode": "CR-2026-0007",
+      "title": "Broken high-pressure water main flooding avenue traffic lanes",
+      "description": "Continuous subterranean geyser pushing water through curb asphalt at 5th Ave and Grant. Street surface is buckling slightly under hydraulic pressure with water 4 inches deep across the sidewalk.",
+      "location": "1420 5th Avenue, Ward 2",
+      "ward": "Ward 2",
+      "coordinates": {
+        "lat": 41.8989,
+        "lng": -87.6525
+      },
+      "category": "Water & Drainage",
+      "priority": "High",
+      "status": "Dispatched",
+      "assignedDepartment": "Water & Sewer Authority",
+      "slaTarget": "< 45 Mins (Urgent)",
+      "aiApproved": false,
+      "endorsementCount": 2,
+      "smsSubscribersCount": 1,
+      "statusHistory": [
+        {
+          "id": "754ab959-5110-42c4-8431-a6bdcce62588",
+          "status": "Reported",
+          "priority": "High",
+          "department": "Water & Sewer Authority",
+          "note": "Report submitted under Water & Drainage and routed to Water & Sewer Authority.",
+          "actor": "Citizen",
+          "timestamp": "2026-11-21T04:00:15.697Z"
+        },
+        {
+          "id": "46397cdf-9464-41a0-896b-6dbfd18983a1",
+          "status": "Dispatched",
+          "priority": "High",
+          "department": "Water & Sewer Authority",
+          "note": "Priority dispatch executed: Metro Water Works • Isolation Crew Alpha (< 45 Mins (Urgent)).",
+          "actor": "Administrator",
+          "timestamp": "2026-11-21T04:00:32.148Z"
+        }
+      ],
+      "comments": [
+        {
+          "id": "3d0775ed-33ec-40c1-9eaf-6ceb2fd733cd",
+          "issueId": "979aeef3-2ad9-42a5-b3d2-8cb6a034b6b2",
+          "authorName": "Verified Resident",
+          "authorRole": "Citizen",
+          "body": "Crew cones are visible at the intersection now.",
+          "timestamp": "2026-11-21T04:00:24.784Z"
+        }
+      ],
+      "visibility": "public",
+      "createdAt": "2026-11-21T04:00:15.697Z",
+      "updatedAt": "2026-11-21T04:00:32.148Z",
+      "assignedCrew": "Metro Water Works • Isolation Crew Alpha",
+      "adminNotes": "[TAC-4 (Ops Channel)] Coordinate perimeter cones and upload completion photo after clearance."
+    },
+    {
+      "id": "seed-1001",
+      "trackingCode": "CR-2026-0001",
+      "title": "Ruptured Water Main Flooding Bike Lane on Oakway Blvd",
+      "description": "Pressurized clean water is bubbling up through buckled asphalt near the crosswalk at 820 Oakway Blvd and 7th Ave, pooling across the dedicated bike path and curb lane.",
+      "location": "820 Oakway Blvd (at 7th Ave), Ward 2",
+      "ward": "Ward 2",
+      "coordinates": {
+        "lat": 41.8814,
+        "lng": -87.6342
+      },
+      "category": "Water & Drainage",
+      "priority": "Critical",
+      "status": "In Progress",
+      "assignedDepartment": "Water & Sewer Authority",
+      "assignedCrew": "Isolation Crew Alpha (Unit W-104)",
+      "slaTarget": "< 2 Hours",
+      "aiApproved": true,
+      "endorsementCount": 48,
+      "smsSubscribersCount": 19,
+      "aiAnalysis": {
+        "detectedCategory": "Water & Drainage",
+        "detectedPriority": "Critical",
+        "urgencyScore": 94,
+        "recommendedDepartment": "Water & Sewer Authority",
+        "secondaryDepartment": "Department of Transportation & Public Works",
+        "confidence": 0.98,
+        "publicImpactSummary": "High-pressure municipal water main rupture creates immediate sub-surface erosion risk under Oakway Boulevard, flooding the express bike lane and threatening transit corridor #14 within 45 minutes.",
+        "recommendedActions": [
+          "Isolate gate valve 44-B at Oakway & 8th and deploy vacuum excavation truck.",
+          "Coordinate northbound bike path & curb lane detour with Traffic Ops.",
+          "Push SMS pressure-drop advisory to affected Ward 2 residents."
+        ],
+        "estimatedSlaHours": 2,
+        "analyzedAt": "2026-11-20T08:14:00.000Z",
+        "model": "gemini-4-hydrogen",
+        "tags": [
+          "Hydraulic Failure",
+          "Flooding",
+          "Transit Corridor"
+        ],
+        "tokensProcessed": 412,
+        "latencyMs": 680
+      },
+      "adminNotes": "Gate valve 44-B isolated; sleeve clamp installation underway until 1:30 PM.",
+      "statusHistory": [
+        {
+          "id": "hist-1001-1",
+          "status": "Reported",
+          "priority": "Critical",
+          "department": "Water & Sewer Authority",
+          "note": "Citizen submitted issue via CivicResolve portal.",
+          "actor": "Citizen",
+          "timestamp": "2026-11-20T08:14:00.000Z"
+        },
+        {
+          "id": "hist-1001-2",
+          "status": "Triaged",
+          "priority": "Critical",
+          "department": "Water & Sewer Authority",
+          "note": "Gemini AI classified as Critical Water & Drainage emergency (98% confidence).",
+          "actor": "Gemini AI",
+          "timestamp": "2026-11-20T08:14:15.000Z"
+        },
+        {
+          "id": "hist-1001-3",
+          "status": "Dispatched",
+          "priority": "Critical",
+          "department": "Water & Sewer Authority",
+          "note": "Work order dispatched to Isolation Crew Alpha (Unit W-104).",
+          "actor": "Administrator",
+          "timestamp": "2026-11-20T08:18:00.000Z"
+        },
+        {
+          "id": "hist-1001-4",
+          "status": "In Progress",
+          "priority": "Critical",
+          "department": "Water & Sewer Authority",
+          "note": "Crew on site; gate valve 44-B isolated and trench draining active.",
+          "actor": "Administrator",
+          "timestamp": "2026-11-20T08:35:00.000Z"
+        }
+      ],
+      "comments": [
+        {
+          "id": "cmt-1001-1",
+          "issueId": "seed-1001",
+          "authorName": "Dave Morales • Water Bureau Crew Chief",
+          "authorRole": "Crew",
+          "body": "Gate valve 44-B on Oakway & 8th has been isolated. Water pressure drop will affect 820–910 Oakway until 1:00 PM while sleeve clamp is secured.",
+          "timestamp": "2026-11-20T08:41:00.000Z"
+        },
+        {
+          "id": "cmt-1001-2",
+          "issueId": "seed-1001",
+          "authorName": "Sarah Jenkins",
+          "authorRole": "Citizen",
+          "body": "Thank you for the fast response! Cyclists coming from the East bridge should use 9th Street detour while the curb lane drains.",
+          "timestamp": "2026-11-20T08:28:00.000Z"
+        }
+      ],
+      "visibility": "public",
+      "createdAt": "2026-11-20T08:14:00.000Z",
+      "updatedAt": "2026-11-20T08:41:00.000Z"
+    },
+    {
+      "id": "seed-1002",
+      "trackingCode": "CR-2026-0002",
+      "title": "Severe Pothole Cluster Outside Lincoln Elementary Crossing",
+      "description": "Deep asphalt cavity roughly 9 inches deep right on the westbound lane fronting Lincoln Elementary crosswalk. Two sedans sustained tire rim damage this morning.",
+      "location": "412 Elm Street & 4th Ave Crossing, Ward 4",
+      "ward": "Ward 4",
+      "coordinates": {
+        "lat": 41.8742,
+        "lng": -87.6415
+      },
+      "category": "Road & Potholes",
+      "priority": "High",
+      "status": "Dispatched",
+      "assignedDepartment": "Department of Transportation & Public Works",
+      "assignedCrew": "Rapid Paving Crew #03",
+      "slaTarget": "< 4 Hours",
+      "aiApproved": true,
+      "endorsementCount": 31,
+      "smsSubscribersCount": 11,
+      "aiAnalysis": {
+        "detectedCategory": "Road & Potholes",
+        "detectedPriority": "High",
+        "urgencyScore": 86,
+        "recommendedDepartment": "Department of Transportation & Public Works",
+        "confidence": 0.96,
+        "publicImpactSummary": "Deep pavement void adjacent to an elementary school crosswalk poses tire blowouts and pedestrian crossing hazards during morning drop-off.",
+        "recommendedActions": [
+          "Dispatch Rapid Paving Crew #03 with hot-mix asphalt patch.",
+          "Place reflective perimeter cones prior to afternoon school dismissal."
+        ],
+        "estimatedSlaHours": 4,
+        "analyzedAt": "2026-11-20T07:55:00.000Z",
+        "model": "gemini-4-hydrogen",
+        "tags": [
+          "Roadway Hazard",
+          "Asphalt Failure",
+          "School Crosswalk"
+        ],
+        "tokensProcessed": 384,
+        "latencyMs": 590
+      },
+      "adminNotes": "Rapid Paving Crew #03 en route; ETA 20 minutes.",
+      "statusHistory": [
+        {
+          "id": "hist-1002-1",
+          "status": "Reported",
+          "priority": "High",
+          "department": "Department of Transportation & Public Works",
+          "note": "Citizen submitted complaint with intersection coordinates.",
+          "actor": "Citizen",
+          "timestamp": "2026-11-20T07:55:00.000Z"
+        },
+        {
+          "id": "hist-1002-2",
+          "status": "Triaged",
+          "priority": "High",
+          "department": "Department of Transportation & Public Works",
+          "note": "Gemini AI prioritized High urgency due to school crosswalk proximity.",
+          "actor": "Gemini AI",
+          "timestamp": "2026-11-20T07:55:10.000Z"
+        },
+        {
+          "id": "hist-1002-3",
+          "status": "Dispatched",
+          "priority": "High",
+          "department": "Department of Transportation & Public Works",
+          "note": "Dispatched Rapid Paving Crew #03 for same-day patch.",
+          "actor": "Administrator",
+          "timestamp": "2026-11-20T08:02:00.000Z"
+        }
+      ],
+      "comments": [
+        {
+          "id": "cmt-1002-1",
+          "issueId": "seed-1002",
+          "authorName": "Autonomous Triage Agent",
+          "authorRole": "Gemini AI",
+          "body": "Detected school-zone proximity multiplier (+14 severity score). Scheduled Rapid Paving Crew #03 ahead of afternoon dismissal.",
+          "timestamp": "2026-11-20T07:55:12.000Z"
+        }
+      ],
+      "visibility": "public",
+      "createdAt": "2026-11-20T07:55:00.000Z",
+      "updatedAt": "2026-11-20T08:02:00.000Z"
+    },
+    {
+      "id": "seed-1003",
+      "trackingCode": "CR-2026-0003",
+      "title": "Four-Way Traffic Signal Stuck on Red Flashing Cycle",
+      "description": "Overhead signal controller at Main & Broadway dropped into four-way flashing red mode causing heavy morning school bus and transit congestion.",
+      "location": "Main St & Broadway Intersection, Ward 1",
+      "ward": "Ward 1",
+      "coordinates": {
+        "lat": 41.8861,
+        "lng": -87.6285
+      },
+      "category": "Traffic & Signage",
+      "priority": "High",
+      "status": "Triaged",
+      "assignedDepartment": "Traffic Engineering & Mobility",
+      "assignedCrew": "Signals Tech #04",
+      "slaTarget": "< 4 Hours",
+      "aiApproved": false,
+      "endorsementCount": 19,
+      "smsSubscribersCount": 7,
+      "aiAnalysis": {
+        "detectedCategory": "Traffic & Signage",
+        "detectedPriority": "High",
+        "urgencyScore": 84,
+        "recommendedDepartment": "Traffic Engineering & Mobility",
+        "secondaryDepartment": "Emergency Municipal Response",
+        "confidence": 0.95,
+        "publicImpactSummary": "Signal controller fault on a major arterial intersection increases rear-end collision risk and delays peak transit buses.",
+        "recommendedActions": [
+          "Dispatch Signals Tech #04 for cabinet relay inspection and firmware reset.",
+          "Coordinate temporary intersection traffic control if outage exceeds 45 minutes."
+        ],
+        "estimatedSlaHours": 4,
+        "analyzedAt": "2026-11-20T06:40:00.000Z",
+        "model": "gemini-4-hydrogen",
+        "tags": [
+          "Traffic Signal",
+          "Arterial Corridor",
+          "Controller Fault"
+        ],
+        "tokensProcessed": 356,
+        "latencyMs": 540
+      },
+      "statusHistory": [
+        {
+          "id": "hist-1003-1",
+          "status": "Reported",
+          "priority": "High",
+          "department": "Traffic Engineering & Mobility",
+          "note": "Logged via CivicResolve citizen web portal.",
+          "actor": "Citizen",
+          "timestamp": "2026-11-20T06:40:00.000Z"
+        },
+        {
+          "id": "hist-1003-2",
+          "status": "Triaged",
+          "priority": "High",
+          "department": "Traffic Engineering & Mobility",
+          "note": "Gemini AI routed to Traffic Engineering & Mobility (awaiting dispatcher approval).",
+          "actor": "Gemini AI",
+          "timestamp": "2026-11-20T06:40:08.000Z"
+        }
+      ],
+      "comments": [],
+      "visibility": "public",
+      "createdAt": "2026-11-20T06:40:00.000Z",
+      "updatedAt": "2026-11-20T06:40:08.000Z"
+    },
+    {
+      "id": "seed-1004",
+      "trackingCode": "CR-2026-0004",
+      "title": "Downed Oak Branch Tangled Over Residential Power Conduit",
+      "description": "Large oak limb snapped during overnight wind gusts and is resting on overhead electrical distribution lines near Lincoln Park perimeter. Faint sparking observed.",
+      "location": "Lincoln Park Perimeter & 18th Pl, Ward 5",
+      "ward": "Ward 5",
+      "coordinates": {
+        "lat": 41.8912,
+        "lng": -87.6491
+      },
+      "category": "Public Safety & Hazards",
+      "priority": "Critical",
+      "status": "In Progress",
+      "assignedDepartment": "Emergency Municipal Response",
+      "assignedCrew": "Power Grid Team #11",
+      "slaTarget": "< 1 Hour",
+      "aiApproved": true,
+      "endorsementCount": 27,
+      "smsSubscribersCount": 15,
+      "aiAnalysis": {
+        "detectedCategory": "Public Safety & Hazards",
+        "detectedPriority": "Critical",
+        "urgencyScore": 97,
+        "recommendedDepartment": "Emergency Municipal Response",
+        "secondaryDepartment": "Municipal Power & Streetlighting",
+        "confidence": 0.99,
+        "publicImpactSummary": "Energized overhead line contact with fallen timber poses immediate arc-flash, fire ignition, and electrocution hazards to pedestrians.",
+        "recommendedActions": [
+          "De-energize feeder segment immediately and establish 50ft safety perimeter.",
+          "Coordinate joint Forestry & High-Voltage Line Crew clearance."
+        ],
+        "estimatedSlaHours": 1,
+        "analyzedAt": "2026-11-20T07:22:00.000Z",
+        "model": "gemini-4-hydrogen",
+        "tags": [
+          "Live Wire",
+          "Arc-Flash Risk",
+          "Dual-Agency"
+        ],
+        "tokensProcessed": 452,
+        "latencyMs": 610
+      },
+      "adminNotes": "Grid segment isolated; Forestry & Power Grid Team #11 clearing branch.",
+      "statusHistory": [
+        {
+          "id": "hist-1004-1",
+          "status": "Reported",
+          "priority": "Critical",
+          "department": "Emergency Municipal Response",
+          "note": "Emergency safety keyword \"sparking / power lines\" triggered Level-1 alert.",
+          "actor": "Gemini AI",
+          "timestamp": "2026-11-20T07:22:00.000Z"
+        },
+        {
+          "id": "hist-1004-2",
+          "status": "In Progress",
+          "priority": "Critical",
+          "department": "Emergency Municipal Response",
+          "note": "Feeder isolated; Power Grid Team #11 on site with Forestry boom truck.",
+          "actor": "Administrator",
+          "timestamp": "2026-11-20T07:35:00.000Z"
+        }
+      ],
+      "comments": [
+        {
+          "id": "cmt-1004-1",
+          "issueId": "seed-1004",
+          "authorName": "Elena Vance • Ops Director",
+          "authorRole": "Administrator",
+          "body": "Feeder breaker opened remotely at 07:28 AM. Residents along 18th Pl temporarily switched to backup lateral.",
+          "timestamp": "2026-11-20T07:36:00.000Z"
+        }
+      ],
+      "visibility": "public",
+      "createdAt": "2026-11-20T07:22:00.000Z",
+      "updatedAt": "2026-11-20T07:36:00.000Z"
+    },
+    {
+      "id": "seed-1005",
+      "trackingCode": "CR-2026-0005",
+      "title": "Overflowing Municipal Waste Bins Blocking ADA Transit Ramp",
+      "description": "All four municipal trash and recycling receptacles by Harbor Transit Plaza bus shelter B are overflowing onto pavers and blocking wheelchair boarding access.",
+      "location": "Harbor Transit Plaza, Bayfront Shelter B, Ward 3",
+      "ward": "Ward 3",
+      "coordinates": {
+        "lat": 41.8705,
+        "lng": -87.6194
+      },
+      "category": "Waste & Sanitation",
+      "priority": "Medium",
+      "status": "Reported",
+      "assignedDepartment": "Sanitation & Solid Waste Management",
+      "slaTarget": "< 18 Hours",
+      "aiApproved": false,
+      "endorsementCount": 12,
+      "smsSubscribersCount": 4,
+      "aiAnalysis": {
+        "detectedCategory": "Waste & Sanitation",
+        "detectedPriority": "Medium",
+        "urgencyScore": 64,
+        "recommendedDepartment": "Sanitation & Solid Waste Management",
+        "confidence": 0.93,
+        "publicImpactSummary": "Accumulated waste at a high-foot-traffic transit hub degrades sanitation and partially obstructs ADA wheelchair ramp access.",
+        "recommendedActions": [
+          "Assign Harbor Transit Plaza to supplemental afternoon compactor sweep.",
+          "Review pickup cadence for Bayfront bus shelter receptacles."
+        ],
+        "estimatedSlaHours": 18,
+        "analyzedAt": "2026-11-19T14:20:00.000Z",
+        "model": "gemini-4-hydrogen",
+        "tags": [
+          "Sanitation",
+          "ADA Obstruction",
+          "Transit Hub"
+        ],
+        "tokensProcessed": 310,
+        "latencyMs": 495
+      },
+      "statusHistory": [
+        {
+          "id": "hist-1005-1",
+          "status": "Reported",
+          "priority": "Medium",
+          "department": "Sanitation & Solid Waste Management",
+          "note": "Submitted by resident and queued for Sanitation sweep assignment.",
+          "actor": "Gemini AI",
+          "timestamp": "2026-11-19T14:20:00.000Z"
+        }
+      ],
+      "comments": [],
+      "visibility": "public",
+      "createdAt": "2026-11-19T14:20:00.000Z",
+      "updatedAt": "2026-11-19T14:20:00.000Z"
+    },
+    {
+      "id": "seed-1006",
+      "trackingCode": "CR-2026-0006",
+      "title": "Fallen Tree Limb Cleared from Pine Creek Park Trailhead",
+      "description": "Large cottonwood limb obstructed the northern paved trailhead path near Pine Creek Park footbridge after heavy rain.",
+      "location": "Pine Creek Park Northern Trailhead, Ward 3",
+      "ward": "Ward 3",
+      "coordinates": {
+        "lat": 41.8689,
+        "lng": -87.6382
+      },
+      "category": "Parks & Public Spaces",
+      "priority": "Medium",
+      "status": "Resolved",
+      "assignedDepartment": "Parks & Recreation Department",
+      "assignedCrew": "Arborist Team #03",
+      "slaTarget": "< 24 Hours",
+      "aiApproved": true,
+      "endorsementCount": 9,
+      "smsSubscribersCount": 3,
+      "aiAnalysis": {
+        "detectedCategory": "Parks & Public Spaces",
+        "detectedPriority": "Medium",
+        "urgencyScore": 58,
+        "recommendedDepartment": "Parks & Recreation Department",
+        "confidence": 0.94,
+        "publicImpactSummary": "Trail blockage affects park pedestrians and cyclists until Forestry clears and inspects overhanging canopy.",
+        "recommendedActions": [
+          "Dispatch Arborist Team #03 with wood chipper and clear trailhead."
+        ],
+        "estimatedSlaHours": 24,
+        "analyzedAt": "2026-11-17T09:00:00.000Z",
+        "model": "gemini-4-hydrogen",
+        "tags": [
+          "Park Trail",
+          "Tree Debris",
+          "Verified Cleared"
+        ],
+        "tokensProcessed": 298,
+        "latencyMs": 470
+      },
+      "adminNotes": "Debris mulched and trailhead reopened; surrounding canopy inspected.",
+      "statusHistory": [
+        {
+          "id": "hist-1006-1",
+          "status": "Reported",
+          "priority": "Medium",
+          "department": "Parks & Recreation Department",
+          "note": "Logged via CivicResolve citizen portal.",
+          "actor": "Citizen",
+          "timestamp": "2026-11-17T09:00:00.000Z"
+        },
+        {
+          "id": "hist-1006-2",
+          "status": "In Progress",
+          "priority": "Medium",
+          "department": "Parks & Recreation Department",
+          "note": "Arborist Team #03 dispatched with chipper crew.",
+          "actor": "Administrator",
+          "timestamp": "2026-11-17T11:30:00.000Z"
+        },
+        {
+          "id": "hist-1006-3",
+          "status": "Resolved",
+          "priority": "Medium",
+          "department": "Parks & Recreation Department",
+          "note": "Trailhead fully cleared and verified safe for pedestrians and cyclists.",
+          "actor": "Administrator",
+          "timestamp": "2026-11-17T15:10:00.000Z"
+        }
+      ],
+      "comments": [
+        {
+          "id": "cmt-1006-1",
+          "issueId": "seed-1006",
+          "authorName": "Arborist Team #03",
+          "authorRole": "Crew",
+          "body": "Pathway cleared and adjacent limb stress-checked. Trailhead is open.",
+          "timestamp": "2026-11-17T15:10:00.000Z"
+        }
+      ],
+      "visibility": "public",
+      "createdAt": "2026-11-17T09:00:00.000Z",
+      "updatedAt": "2026-11-17T15:10:00.000Z",
+      "resolvedAt": "2026-11-17T15:10:00.000Z"
+    }
+  ],
+  "privateContacts": {
+    "seed-1001": {
+      "reporterName": "Maya Lin"
+    },
+    "seed-1002": {
+      "reporterName": "Elena Alvarez"
+    },
+    "seed-1003": {
+      "reporterName": "David Okafor"
+    },
+    "seed-1004": {
+      "reporterName": "Marcus Reid"
+    },
+    "seed-1005": {
+      "reporterName": "Samir Patel"
+    },
+    "seed-1006": {
+      "reporterName": "Hannah Brooks"
+    }
+  }
+}

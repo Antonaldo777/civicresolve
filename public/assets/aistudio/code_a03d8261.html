@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-high": "#dce9ff", "tertiary-fixed-dim": "#6bd8cb", "secondary": "#006398", "surface-container-low": "#eff4ff", "outline-variant": "#c6c6cd", "secondary-fixed": "#cce5ff", "primary-fixed-dim": "#bec6e0", "on-primary-fixed-variant": "#3f465c", "on-secondary-container": "#00476e", "error": "#ba1a1a", "on-tertiary-fixed": "#00201d", "surface-dim": "#cbdbf5", "surface-container-highest": "#d3e4fe", "surface-tint": "#565e74", "error-container": "#ffdad6", "on-error-container": "#93000a", "on-background": "#0b1c30", "on-tertiary": "#ffffff", "secondary-fixed-dim": "#93ccff", "primary": "#000000", "inverse-on-surface": "#eaf1ff", "surface": "#f8f9ff", "secondary-container": "#5bb8fe", "on-secondary-fixed": "#001d31", "on-tertiary-container": "#0c9488", "surface-variant": "#d3e4fe", "on-surface-variant": "#45464d", "on-primary": "#ffffff", "tertiary-fixed": "#89f5e7", "on-tertiary-fixed-variant": "#005049", "on-primary-container": "#7c839b", "tertiary": "#000000", "tertiary-container": "#00201d", "on-surface": "#0b1c30", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#131b2e", "surface-container": "#e5eeff", "on-secondary-fixed-variant": "#004b73", "inverse-primary": "#bec6e0", "on-secondary": "#ffffff", "on-error": "#ffffff", "background": "#f8f9ff", "primary-fixed": "#dae2fd", "inverse-surface": "#213145", "surface-bright": "#f8f9ff", "primary-container": "#131b2e", "outline": "#76777d" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "margin": "2rem", "margin-mobile": "1rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "label-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Inter"], "telemetry-mono": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "body-sm": ["Inter"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "title-md": ["Plus Jakarta Sans"] }, "fontSize": { "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "telemetry-mono": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "800" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-md px-space-md"><div class="flex items-center gap-space-sm px-space-sm py-space-xs"><img alt="CivicResolve Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDHM8D4ECfy3uTzuH3uTuEzGrWPVYbxnhaL1JW5h2J3XuexiPM1yVtS0BUylgg0cK7kFzz7vqYIdfy25VO_x2HNPm36pr9E893PLPJvyh3Tcuid8_4UWAxOKFZRtP6GAlK-30cclPZJmIaJe20WKgR9nf3xPYTtEpl9JradmG1R5XQSU9qMfum7x6igHZhiFmlAVv0ycwBMexAnfGScW_zESly0RsOllHUQ58Ja8Qa0"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none tracking-tight">CivicResolve</span><span class="font-telemetry-mono text-telemetry-mono text-secondary">Ops Command</span></div></div><div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="flex h-2 w-2 rounded-full bg-on-tertiary-container animate-pulse"></span><span class="font-telemetry-mono text-telemetry-mono text-on-surface font-semibold">Engine: Gemini 1.5</span></div><span class="font-telemetry-mono text-telemetry-mono text-secondary bg-secondary-fixed px-1.5 py-0.5 rounded-full">99.8%</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="admin-triage-and-ops" href="#"><span class="material-symbols-outlined text-xl">dashboard</span><span>Triage Board</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="live-city-map" href="#"><span class="material-symbols-outlined text-xl">map</span><span>Live Spatial Grid</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-sm transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg shadow-sm" data-path="gemini-ai-insights" href="#"><span class="material-symbols-outlined text-xl">auto_awesome</span><span>AI Diagnostics</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="public-tracker" href="#"><span class="material-symbols-outlined text-xl">format_list_bulleted</span><span>Public Incidents</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="report-an-issue" href="#"><span class="material-symbols-outlined text-xl">add_circle</span><span>Dispatch Ticket</span></a></nav></div><div class="px-space-md flex flex-col gap-space-sm"><div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant">Hotline Telemetry</span><div class="flex items-center justify-between text-telemetry-mono font-telemetry-mono"><span class="text-error">911 Active Link</span><span class="text-on-tertiary-container font-semibold">100% UP</span></div><div class="flex items-center justify-between text-telemetry-mono font-telemetry-mono"><span class="text-secondary">311 Lines</span><span>24 Dispatchers</span></div></div><div class="flex items-center gap-space-sm p-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcqC3Dz_ouuOvkAFSvLbR0PztuPUdTSWO7yJVMImSC_65wU6KRqwQwr4hCZpA5OmDFgrSdxGspcCf2q3WqxL3UjjDG8axdGAaOpdpPuHMEme_SgjR9PwnCzJFP8v_7f8qWGl_Vq8Gg24S_2uXHB7rsDlJmEtCCHQA6TTFaMfM3q8hX5WUGwmABnN0fQGmFakVpejMv3WrggL4KZRl2tbNNKAqDlpKquoB5hCaaadM"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Elena Vance</span><span class="font-telemetry-mono text-telemetry-mono text-on-surface-variant">Ops Director</span></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-40 flex items-center justify-between px-gutter shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs font-telemetry-mono text-telemetry-mono text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">route</span><span>Operations Portal</span><span class="text-outline-variant">&gt;</span><span class="text-on-surface font-semibold">Municipal Dispatch Command</span></div><div class="hidden md:flex items-center gap-space-xs bg-surface-container px-space-sm py-0.5 rounded-full"><span class="material-symbols-outlined text-secondary text-sm">auto_awesome</span><span class="font-telemetry-mono text-telemetry-mono text-secondary font-semibold">Gemini 1.5 Flash Model: Operational (99.8%)</span></div></div><div class="flex items-center gap-space-md"><div class="relative w-64"><input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg pl-9 pr-space-md py-1.5 focus:outline-none focus:ring-2 focus:ring-secondary/50" placeholder="Search Ticket # or Street..." type="text"/><span class="material-symbols-outlined absolute left-2.5 top-1.5 text-on-surface-variant text-base">search</span></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-lg"><span class="material-symbols-outlined text-secondary text-sm">location_city</span><span class="font-label-sm text-label-sm text-on-surface">Metro Central District</span></div><button aria-label="Notifications" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-telemetry-mono text-[10px] font-bold">3</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcqC3Dz_ouuOvkAFSvLbR0PztuPUdTSWO7yJVMImSC_65wU6KRqwQwr4hCZpA5OmDFgrSdxGspcCf2q3WqxL3UjjDG8axdGAaOpdpPuHMEme_SgjR9PwnCzJFP8v_7f8qWGl_Vq8Gg24S_2uXHB7rsDlJmEtCCHQA6TTFaMfM3q8hX5WUGwmABnN0fQGmFakVpejMv3WrggL4KZRl2tbNNKAqDlpKquoB5hCaaadM"/></div></header><main class="w-full pt-16 bg-surface min-h-screen px-gutter py-space-lg"><div class="flex flex-col w-full">
+<!-- Command Hub Title & Telemetry Header Bar -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between pb-space-lg gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-telemetry-mono text-telemetry-mono uppercase">
+<span class="material-symbols-outlined text-sm text-secondary animate-pulse">auto_awesome</span>
+          Gemini 1.5 Pro • Multimodal Engine v3.4
+        </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-telemetry-mono text-telemetry-mono">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container animate-ping"></span>
+          Telemetry Live
+        </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Gemini Civic Intelligence Engine: Predictive Analytics &amp; Municipal Trends</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Deep municipal insights, automated anomaly detection, and predictive infrastructure maintenance powered by Google Gemini 1.5.</p>
+</div>
+<!-- Quick Ops Actions -->
+<div class="flex items-center gap-space-sm self-start lg:self-auto shrink-0">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-lg text-secondary">tune</span>
+<span>Re-tune Weights</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:opacity-90 transition-opacity" id="exportReportBtn">
+<span class="material-symbols-outlined text-lg">download</span>
+<span>Export Council Dossier</span>
+</button>
+</div>
+</div>
+<!-- Gemini Insight Flash Banners -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md mb-space-lg">
+<!-- Banner 1: Pothole Surge -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div class="absolute -right-8 -top-8 w-36 h-36 rounded-full bg-secondary-fixed/40 blur-2xl pointer-events-none"></div>
+<div class="flex items-start gap-space-sm relative z-10">
+<div class="p-2 rounded-lg bg-surface-container-high text-secondary shrink-0">
+<span class="material-symbols-outlined text-2xl">warning_amber</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-xs">
+<span class="font-telemetry-mono text-telemetry-mono text-secondary font-semibold uppercase">Predictive Anomaly Detected</span>
+<span class="text-outline-variant">•</span>
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface-variant">Ward 4 Sector B</span>
+</div>
+<p class="font-title-md text-title-md text-on-surface mt-1 leading-snug">
+            Predictive Pothole Surge Detected in Ward 4 following recent freeze-thaw cycle.
+          </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Estimated <span class="font-semibold text-error">+35% complaints</span> in the next 72 hours. Proactive asphalt patching crews pre-positioning recommended on Arterial Route 12.
+          </p>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between relative z-10">
+<div class="flex items-center gap-space-xs font-telemetry-mono text-telemetry-mono text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-sm">psychology</span>
+<span>Inference Confidence: 94.8%</span>
+</div>
+<button class="px-space-sm py-1 rounded bg-secondary text-on-secondary font-label-sm text-label-sm hover:opacity-90 transition-opacity">
+          Auto-Route Crew #4A
+        </button>
+</div>
+</div>
+<!-- Banner 2: Sentiment Metric -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div class="absolute -right-8 -top-8 w-36 h-36 rounded-full bg-tertiary-fixed-dim/30 blur-2xl pointer-events-none"></div>
+<div class="flex items-start gap-space-sm relative z-10">
+<div class="p-2 rounded-lg bg-surface-container-high text-on-tertiary-container shrink-0">
+<span class="material-symbols-outlined text-2xl">sentiment_satisfied</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-xs">
+<span class="font-telemetry-mono text-telemetry-mono text-on-tertiary-container font-semibold uppercase">Citizen Sentiment Signal</span>
+<span class="text-outline-variant">•</span>
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface-variant">Real-Time Polling Analysis</span>
+</div>
+<p class="font-title-md text-title-md text-on-surface mt-1 leading-snug">
+            Citizen Satisfaction: 84% Positive response to automated 4-minute triage response time.
+          </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Multimodal photo validation and automated acknowledgement notifications reduced citizen re-dial rate by <span class="font-semibold text-secondary">41.2%</span> city-wide.
+          </p>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between relative z-10">
+<div class="flex items-center gap-space-xs font-telemetry-mono text-telemetry-mono text-on-surface-variant">
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">insights</span>
+<span>Sample Pool: 2,840 311 Inbound Records</span>
+</div>
+<span class="font-telemetry-mono text-telemetry-mono bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full font-semibold">
+          Trend: +6.4% MoM
+        </span>
+</div>
+</div>
+</div>
+<!-- Four Analytical Command Modules: 2x2 Bento Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md mb-space-lg">
+<!-- Module A: Department Workload & AI Routing Distribution (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-xl">alt_route</span>
+<h2 class="font-title-md text-title-md text-on-surface">Department Workload &amp; AI Routing Distribution</h2>
+</div>
+<span class="font-telemetry-mono text-telemetry-mono bg-surface-container px-2 py-1 rounded text-on-surface-variant">Routing Engine Acc: 98.4%</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center my-space-sm">
+<!-- SVG Donut Chart Representation -->
+<div class="md:col-span-5 flex flex-col items-center justify-center relative">
+<svg class="w-44 h-44 transform -rotate-90" viewbox="0 0 160 160">
+<!-- Transportation 38% -->
+<circle cx="80" cy="80" fill="transparent" r="62" stroke="#006398" stroke-dasharray="148 241" stroke-dashoffset="0" stroke-width="20"></circle>
+<!-- Water & Sewer 26% -->
+<circle cx="80" cy="80" fill="transparent" r="62" stroke="#5bb8fe" stroke-dasharray="101 288" stroke-dashoffset="-148" stroke-width="20"></circle>
+<!-- Sanitation 18% -->
+<circle cx="80" cy="80" fill="transparent" r="62" stroke="#131b2e" stroke-dasharray="70 319" stroke-dashoffset="-249" stroke-width="20"></circle>
+<!-- Electrical & Lighting 12% -->
+<circle cx="80" cy="80" fill="transparent" r="62" stroke="#6bd8cb" stroke-dasharray="46 343" stroke-dashoffset="-319" stroke-width="20"></circle>
+<!-- Parks 6% -->
+<circle cx="80" cy="80" fill="transparent" r="62" stroke="#bec6e0" stroke-dasharray="24 365" stroke-dashoffset="-365" stroke-width="20"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none text-center">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-none font-bold">1,482</span>
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface-variant mt-1">Dispatches Today</span>
+</div>
+</div>
+<!-- Breakdown List -->
+<div class="md:col-span-7 flex flex-col gap-space-xs">
+<!-- Row 1 -->
+<div class="p-2 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-on-surface">Transportation</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface-variant">38% (563)</span>
+<span class="font-telemetry-mono text-telemetry-mono text-on-tertiary-container font-semibold">99.1% Acc</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="p-2 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="font-label-md text-label-md text-on-surface">Water &amp; Sewer</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface-variant">26% (385)</span>
+<span class="font-telemetry-mono text-telemetry-mono text-on-tertiary-container font-semibold">98.5% Acc</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="p-2 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md text-on-surface">Sanitation &amp; Bulk</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface-variant">18% (266)</span>
+<span class="font-telemetry-mono text-telemetry-mono text-on-tertiary-container font-semibold">97.8% Acc</span>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="p-2 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-md text-label-md text-on-surface">Electrical &amp; Lighting</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface-variant">12% (178)</span>
+<span class="font-telemetry-mono text-telemetry-mono text-on-tertiary-container font-semibold">98.9% Acc</span>
+</div>
+</div>
+<!-- Row 5 -->
+<div class="p-2 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary-fixed-dim"></span>
+<span class="font-label-md text-label-md text-on-surface">Parks &amp; Forestry</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface-variant">6% (90)</span>
+<span class="font-telemetry-mono text-telemetry-mono text-on-tertiary-container font-semibold">96.7% Acc</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high/40 p-space-sm rounded-lg flex items-center justify-between">
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface-variant">Gemini Zero-Shot Routing Pipeline</span>
+<span class="font-telemetry-mono text-telemetry-mono text-secondary font-semibold">0.08% Manual Re-assignment Rate</span>
+</div>
+</div>
+<!-- Module B: Urgency vs Resolution Velocity (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-xl">speed</span>
+<h2 class="font-title-md text-title-md text-on-surface">Urgency vs Velocity</h2>
+</div>
+<span class="font-telemetry-mono text-telemetry-mono text-secondary bg-secondary-fixed px-2 py-0.5 rounded-full font-semibold">Avg: 11.4h</span>
+</div>
+<!-- Resolution Stat Cards -->
+<div class="grid grid-cols-3 gap-space-xs my-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-telemetry-mono text-telemetry-mono text-error font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Critical
+          </span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">3.2 hrs</span>
+<span class="font-telemetry-mono text-telemetry-mono text-on-tertiary-container">-48m vs Q3</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-telemetry-mono text-telemetry-mono text-secondary font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> High
+          </span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">14.0 hrs</span>
+<span class="font-telemetry-mono text-telemetry-mono text-on-tertiary-container">-2.1h vs Q3</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface-variant font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> Medium
+          </span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">48.0 hrs</span>
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface-variant">On Target</span>
+</div>
+</div>
+<!-- Trend Graph (Inline SVG Bar/Line comparison) -->
+<div class="bg-surface-container p-space-sm rounded-lg my-space-xs">
+<div class="flex items-center justify-between mb-2">
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface-variant">Resolution SLA Compliance (Last 7 Days)</span>
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface font-bold">96.8%</span>
+</div>
+<svg class="w-full h-20 overflow-visible" viewbox="0 0 320 80">
+<!-- Reference grid lines -->
+<line stroke="#d3e4fe" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="320" y1="20" y2="20"></line>
+<line stroke="#d3e4fe" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="320" y1="50" y2="50"></line>
+<!-- Bar Series (Resolved) -->
+<rect fill="#bec6e0" height="48" rx="2" width="16" x="15" y="32"></rect>
+<rect fill="#bec6e0" height="56" rx="2" width="16" x="60" y="24"></rect>
+<rect fill="#bec6e0" height="62" rx="2" width="16" x="105" y="18"></rect>
+<rect fill="#bec6e0" height="52" rx="2" width="16" x="150" y="28"></rect>
+<rect fill="#bec6e0" height="66" rx="2" width="16" x="195" y="14"></rect>
+<rect fill="#006398" height="70" rx="2" width="16" x="240" y="10"></rect>
+<rect fill="#006398" height="68" rx="2" width="16" x="285" y="12"></rect>
+<!-- Velocity Trend Curve -->
+<path d="M 23 40 Q 68 28, 113 22 T 203 16 T 293 12" fill="none" stroke="#ba1a1a" stroke-width="2.5"></path>
+<circle cx="293" cy="12" fill="#ba1a1a" r="3.5"></circle>
+</svg>
+<div class="flex justify-between font-telemetry-mono text-[10px] text-on-surface-variant px-1 mt-1">
+<span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>TODAY</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-telemetry-mono font-telemetry-mono text-on-surface-variant pt-space-xs">
+<span>Fastest: Gas Containment (18m)</span>
+<span class="text-error font-semibold">Slowest: Water Main Replacement (4.8d)</span>
+</div>
+</div>
+</div>
+<!-- Lower Row: Spatial Ward Health + Real-Time Cognitive Audit Telemetry -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md mb-space-lg">
+<!-- Module C: Geographic Heatmap & Ward Infrastructure Health Index (6 cols) -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-xl">map</span>
+<h2 class="font-title-md text-title-md text-on-surface">Ward Infrastructure Health Index</h2>
+</div>
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface-variant">Live Spatial Mesh</span>
+</div>
+<!-- Map Display Container -->
+<div class="w-full h-52 bg-cover bg-center rounded-lg relative overflow-hidden flex flex-col justify-between p-space-sm" data-location="Chicago Municipal Grid Downtown" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuASsTA0FN8DUU-luuSwdf7Pkb8AXGZxBZaxOmvP3dBIZNmJYXBLlSX0hw18zM-OcfPFDNJx_fQ8a9pt2x6x1FN9NmPyRTl2091xYOEoBF1-tAy2yEn8wi6VE35XaGIhZGGC_4PN75BxyCZPiH-LlHlrrJXYVl9IoHy3wy4oiK1vnLLARQdqmirm5Tk2VhW0QhHB2v7pQNBckduHxQjTm84Srz3x2-NkaRnHnj3o7_8');">
+<!-- Floating HUD Over Map -->
+<div class="self-start bg-surface-container-lowest/90 backdrop-blur-md px- space-sm py-1 rounded shadow-sm flex items-center gap-space-xs font-telemetry-mono text-telemetry-mono">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-semibold text-on-surface">Spatial Incident Density: Ward 4 Peak</span>
+</div>
+<div class="self-end bg-surface-container-lowest/95 backdrop-blur-md p-space-sm rounded-lg shadow-sm flex items-center gap-space-md text-telemetry-mono font-telemetry-mono">
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded bg-on-tertiary-container"></span>
+<span>&gt;80 Good</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded bg-secondary-container"></span>
+<span>70-79 Stable</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded bg-error"></span>
+<span>&lt;70 Alert</span>
+</div>
+</div>
+</div>
+<!-- Ward Health Metrics List -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-xs mt-space-md">
+<!-- Ward 1 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Ward 1 (North)</span>
+<span class="font-telemetry-mono text-telemetry-mono bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.5 rounded font-bold">92</span>
+</div>
+<span class="font-telemetry-mono text-telemetry-mono text-on-tertiary-container mt-1 font-semibold">Good Standing</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">8 active, 0 critical</span>
+</div>
+<!-- Ward 2 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Ward 2 (Center)</span>
+<span class="font-telemetry-mono text-telemetry-mono bg-secondary-fixed text-on-secondary-fixed px-1.5 py-0.5 rounded font-bold">84</span>
+</div>
+<span class="font-telemetry-mono text-telemetry-mono text-secondary mt-1 font-semibold">Stable State</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">23 active, 2 high</span>
+</div>
+<!-- Ward 4 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Ward 4 (Lakeside)</span>
+<span class="font-telemetry-mono text-telemetry-mono bg-error-container text-on-error-container px-1.5 py-0.5 rounded font-bold">68</span>
+</div>
+<span class="font-telemetry-mono text-telemetry-mono text-error mt-1 font-semibold">Attention Needed</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">54 active, freeze-thaw</span>
+</div>
+</div>
+</div>
+<!-- Module D: Gemini Cognitive Audit Log & Prompt Telemetry (6 cols) -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-xl">developer_board</span>
+<h2 class="font-title-md text-title-md text-on-surface">Cognitive Audit Log &amp; Prompt Telemetry</h2>
+</div>
+<div class="flex items-center gap-space-xs font-telemetry-mono text-telemetry-mono">
+<span class="text-on-surface-variant">Avg Latency:</span>
+<span class="font-bold text-on-tertiary-container bg-surface-container px-1.5 py-0.5 rounded">420ms</span>
+</div>
+</div>
+<!-- Real-Time Event Stream Table -->
+<div class="flex flex-col gap-space-xs overflow-y-auto max-h-[260px] pr-1">
+<!-- Log Item 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 text-on-surface">
+<div class="flex items-center justify-between font-telemetry-mono text-telemetry-mono">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+<span class="font-bold">EVT_90412 // MULTIMODAL_TRIAGE</span>
+</div>
+<span class="text-on-surface-variant">12s ago • 384 tokens</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Input: Image (1080x1920) + Text "Pavement collapsed over storm culvert". Gemini Classified: <span class="font-semibold text-on-surface">Critical Structural Hazard</span> -&gt; Dispatched to Public Works Emergency.
+          </p>
+</div>
+<!-- Log Item 2 (Duplicate Match) -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 text-on-surface">
+<div class="flex items-center justify-between font-telemetry-mono text-telemetry-mono">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-bold">EVT_90411 // DUP_CROSS_REFERENCE</span>
+</div>
+<span class="text-on-surface-variant">48s ago • 210 tokens</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Identified spatial and visual match for ticket <span class="font-semibold text-secondary">#TK-8819</span> (Flickering signal on 5th &amp; Pine). Merged 3 duplicate citizen calls into primary parent dispatch.
+          </p>
+</div>
+<!-- Log Item 3 (Emergency Flag) -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 text-on-surface">
+<div class="flex items-center justify-between font-telemetry-mono text-telemetry-mono">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="font-bold text-error">EVT_90409 // CRITICAL_SAFETY_TRIP</span>
+</div>
+<span class="text-on-surface-variant">2m ago • 452 tokens</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Trigger keyword <span class="font-semibold text-error">"live wire"</span> matched. Gemini automated priority elevated to LEVEL-1 EMERGENCY. Direct push to Fire Dispatch radio channel.
+          </p>
+</div>
+</div>
+<!-- Telemetry Bottom Bar -->
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-telemetry-mono text-telemetry-mono text-on-surface-variant">
+<span>Session Tokens: 1,842,910 / 2M</span>
+<span class="text-secondary font-semibold">Gemini Safety Filters: STRICT_PASS</span>
+</div>
+</div>
+</div>
+<!-- AI Model Governance & Controls System -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-space-xs gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-2xl">verified_user</span>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Municipal AI Model Governance &amp; Dispatch Guardrails</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Granular algorithmic controls, emergency keyword filters, and real-time oversight settings.</p>
+</div>
+</div>
+<span class="font-telemetry-mono text-telemetry-mono bg-surface-container text-on-surface px-3 py-1 rounded-full self-start md:self-auto font-semibold">
+        Model Protocol: ISO-37120 Certified
+      </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center">
+<!-- Confidence Threshold Slider (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface" for="confRange">Autonomous Auto-Dispatch Threshold</label>
+<span class="font-telemetry-mono text-telemetry-mono bg-secondary text-on-secondary px-2 py-0.5 rounded font-bold" id="sliderVal">92%</span>
+</div>
+<p class="font-body-sm text-[13px] text-on-surface-variant">
+          Tickets with Gemini confidence score exceeding this threshold are directly dispatched without human dispatcher pre-clearance.
+        </p>
+<input class="w-full h-2 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-secondary mt-2" id="confRange" max="99" min="70" type="range" value="92"/>
+<div class="flex justify-between font-telemetry-mono text-[10px] text-on-surface-variant">
+<span>70% (High Velocity)</span>
+<span>90% (Standard)</span>
+<span>99% (Strict Review)</span>
+</div>
+</div>
+<!-- Emergency Keywords (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Hardwired Critical Safety Keyword Triggers</span>
+<span class="font-telemetry-mono text-telemetry-mono text-error font-semibold">Instant Escalation</span>
+</div>
+<p class="font-body-sm text-[13px] text-on-surface-variant">
+          Citizen reports containing any matching token immediately trigger emergency multi-agency alerts.
+        </p>
+<div class="flex flex-wrap gap-1.5 mt-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-error-container text-on-error-container font-telemetry-mono text-telemetry-mono font-semibold">
+<span class="material-symbols-outlined text-xs">local_fire_department</span> gas leak
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-error-container text-on-error-container font-telemetry-mono text-telemetry-mono font-semibold">
+<span class="material-symbols-outlined text-xs">bolt</span> live wire
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-error-container text-on-error-container font-telemetry-mono text-telemetry-mono font-semibold">
+<span class="material-symbols-outlined text-xs">flood</span> flooding
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-error-container text-on-error-container font-telemetry-mono text-telemetry-mono font-semibold">
+<span class="material-symbols-outlined text-xs">park</span> collapsed tree
+          </span>
+<button class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-telemetry-mono text-telemetry-mono hover:bg-surface-container transition-colors">
+            + Add Word
+          </button>
+</div>
+</div>
+<!-- Quick Action Toggles (2 cols) -->
+<div class="lg:col-span-2 flex flex-col gap-space-xs justify-center">
+<button class="w-full py-2 px-space-sm rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors text-center">
+          Audit Model Weights
+        </button>
+<button class="w-full py-2 px-space-sm rounded-lg bg-surface-container text-error font-label-md text-label-md hover:bg-error-container hover:text-on-error-container transition-colors text-center">
+          Emergency Pause
+        </button>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container (Dynamic trigger) -->
+<div class="fixed bottom-6 right-6 bg-surface-container-lowest text-on-surface px-space-md py-space-sm rounded-lg shadow-xl border border-secondary/20 flex items-center gap-space-sm transform translate-y-24 opacity-0 transition-all duration-300 z-50 pointer-events-none" id="dossierToast">
+<span class="material-symbols-outlined text-on-tertiary-container text-xl">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md">Dossier Generated</span>
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface-variant">Council summary PDF exported with Gemini insights.</span>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for the governance slider and dossier export
+  const slider = document.getElementById('confRange');
+  const sliderVal = document.getElementById('sliderVal');
+  if (slider && sliderVal) {
+    slider.addEventListener('input', (e) => {
+      sliderVal.textContent = e.target.value + '%';
+    });
+  }
+
+  const exportBtn = document.getElementById('exportReportBtn');
+  const toast = document.getElementById('dossierToast');
+  if (exportBtn && toast) {
+    exportBtn.addEventListener('click', () => {
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    });
+  }
+</script></main></div></body></html>

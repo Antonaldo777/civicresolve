@@ -1,0 +1,181 @@
+{
+  "planHash": "8da363cd2bdb4a744158f861f38923d00cab1ca9c114b324a471c7004ab34615",
+  "phase": "standalone",
+  "recordedAtUtc": "2026-11-21T06:25:07.3906671Z",
+  "retryCount": 0,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 9373,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "typescript-no-emit",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E react-example@0.0.0 lint\r\n\u003E tsc --noEmit\r\n\r\n",
+        "durationMs": 2648
+      },
+      {
+        "name": "production-build",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E react-example@0.0.0 build\r\n\u003E vite build\r\n\r\n\u001B[33m(!) Your Vite config uses features that are unsupported by \u0060configLoader: \u0027native\u0027\u0060, which is planned to become the default in a future major version of Vite:\r\n  - \u0060__dirname\u0060 (vite.config.ts:22:40). Use \u0060import.meta.dirname\u0060 instead\r\nSet \u0060VITE_CONFIG_NATIVE_IGNORE_WARNING=true\u0060 to suppress this warning.\u001B[39m\r\n\u001B[36mvite v8.3.8 \u001B[32mbuilding client environment for production...\u001B[36m\u001B[39m\r\ntransforming...\r\n\u2713 1701 modules transformed.\r\nrendering chunks...\r\ncomputing gzip size...\r\ndist/index.html                     1.31 kB \u2502 gzip:   0.57 kB\r\ndist/assets/index-CXBf0xZw.css     64.58 kB \u2502 gzip:  10.72 kB\r\ndist/assets/index-Ck89MjbN.js   1,027.42 kB \u2502 gzip: 294.70 kB\r\n\r\n\u001B[33m[plugin builtin:vite-reporter] \r\n(!) Some chunks are larger than 500 kB after minification. Consider:\r\n- Using dynamic import() to code-split the application\r\n- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting\r\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001B[39m\r\n\u001B[32m\u2713 built in 939ms\u001B[39m\r\n",
+        "durationMs": 2894
+      },
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E react-example@0.0.0 test\r\n\u003E tsx --test src/shared/civicDomain.test.ts src/shared/chatDomain.test.ts server/auth.test.ts server/store/issueStore.test.ts server/routes/issues.test.ts\r\n\r\n\u2714 Firebase ID tokens require a valid signature and project claims (77.3023ms)\r\n\u2714 public issue reads stay available while AI and mutation routes require authentication (146.8744ms)\r\n\u2714 IssueStore seeds data, creates, updates, persists to disk, and deletes issues (79.1802ms)\r\n\u2714 resolveChatModel routes standard and fast mode to supported Gemini models (1.0788ms)\r\n\u2714 validateAndNormalizeChatPayload rejects empty messages and invalid roles (0.4443ms)\r\n\u2714 validateAndNormalizeChatPayload strips leading model turns and keeps multi-turn history (0.2991ms)\r\n\u2714 buildSanitizedCivicContext excludes PII and buildChatSystemInstruction embeds role and ticket context (3.3343ms)\r\n\u2714 validateCreateIssueInput catches empty and short fields in predictable field order (2.3294ms)\r\n\u2714 validateCreateIssueInput accepts valid payload and validates image MIME type (0.3072ms)\r\n\u2714 input validators reject malformed JSON field types without throwing (0.3822ms)\r\n\u2714 status transition workflow enforces valid 5-stage transitions (0.2394ms)\r\n\u2714 filterIssues and sortIssues filter and order issues accurately (0.5961ms)\r\n\u2714 computeIssueStats, ward health, and department distribution aggregate accurately (2.0845ms)\r\n\u2714 serializeIssuesToCsv neutralizes formula injection, supports BOM, and validates comments/SMS (0.6676ms)\r\n\u2139 tests 14\r\n\u2139 suites 0\r\n\u2139 pass 14\r\n\u2139 fail 0\r\n\u2139 cancelled 0\r\n\u2139 skipped 0\r\n\u2139 todo 0\r\n\u2139 duration_ms 1995.2822\r\n",
+        "durationMs": 4546,
+        "testResults": {
+          "testFramework": "unknown",
+          "runnerDetectedFrom": "none",
+          "testsTotal": 0,
+          "testsPassed": 0,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": true
+        }
+      },
+      {
+        "name": "home-page-responds",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": false,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 1,
+        "outputSample": "server exited before responding (exit=1)\n--- server output ---\n\u001B[33m(!) Your Vite config uses features that are unsupported by \u0060configLoader: \u0027native\u0027\u0060, which is planned to become the default in a future major version of Vite:\r\n  - \u0060__dirname\u0060 (vite.config.ts:22:40). Use \u0060import.meta.dirname\u0060 instead\r\nSet \u0060VITE_CONFIG_NATIVE_IGNORE_WARNING=true\u0060 to suppress this warning.\u001B[39m\r\n\u001B[31mWebSocket server error: Port 24678 is already in use\u001B[39m\r\n\u001B[2m9:25:00 am\u001B[22m \u001B[36m\u001B[1m[vite]\u001B[22m\u001B[39m \u001B[90m\u001B[2m(client)\u001B[22m\u001B[39m Re-optimizing dependencies because lockfile has changed\r\nnode:events:505\r\n    throw er; // Unhandled \u0027error\u0027 event\r\n    ^\r\n\r\nError: listen EADDRINUSE: address already in use 0.0.0.0:3000\r\n    at Server.setupListenHandle [as _listen2] (node:net:2390:16)\r\n    at listenInCluster (node:net:2499:12)\r\n    at node:net:2728:7\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)\r\nEmitted \u0027error\u0027 event on Server instance at:\r\n    at emitErrorNT (node:net:2478:8)\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\r\n  code: \u0027EADDRINUSE\u0027,\r\n  errno: -4091,\r\n  syscall: \u0027listen\u0027,\r\n  address: \u00270.0.0.0\u0027,\r\n  port: 3000\r\n}\r\n\r\nNode.js v26.13.0\r\n",
+        "durationMs": 3473
+      },
+      {
+        "name": "api-health-responds",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": false,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 1,
+        "outputSample": "server exited before responding (exit=1)\n--- server output ---\n\u001B[33m(!) Your Vite config uses features that are unsupported by \u0060configLoader: \u0027native\u0027\u0060, which is planned to become the default in a future major version of Vite:\r\n  - \u0060__dirname\u0060 (vite.config.ts:22:40). Use \u0060import.meta.dirname\u0060 instead\r\nSet \u0060VITE_CONFIG_NATIVE_IGNORE_WARNING=true\u0060 to suppress this warning.\u001B[39m\r\n\u001B[31mWebSocket server error: Port 24678 is already in use\u001B[39m\r\nnode:events:505\r\n    throw er; // Unhandled \u0027error\u0027 event\r\n    ^\r\n\r\nError: listen EADDRINUSE: address already in use 0.0.0.0:3000\r\n    at Server.setupListenHandle [as _listen2] (node:net:2390:16)\r\n    at listenInCluster (node:net:2499:12)\r\n    at node:net:2728:7\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)\r\nEmitted \u0027error\u0027 event on Server instance at:\r\n    at emitErrorNT (node:net:2478:8)\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\r\n  code: \u0027EADDRINUSE\u0027,\r\n  errno: -4091,\r\n  syscall: \u0027listen\u0027,\r\n  address: \u00270.0.0.0\u0027,\r\n  port: 3000\r\n}\r\n\r\nNode.js v26.13.0\r\n",
+        "durationMs": 2960
+      },
+      {
+        "name": "public-issues-respond",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": false,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 1,
+        "outputSample": "server exited before responding (exit=1)\n--- server output ---\n\u001B[33m(!) Your Vite config uses features that are unsupported by \u0060configLoader: \u0027native\u0027\u0060, which is planned to become the default in a future major version of Vite:\r\n  - \u0060__dirname\u0060 (vite.config.ts:22:40). Use \u0060import.meta.dirname\u0060 instead\r\nSet \u0060VITE_CONFIG_NATIVE_IGNORE_WARNING=true\u0060 to suppress this warning.\u001B[39m\r\n\u001B[31mWebSocket server error: Port 24678 is already in use\u001B[39m\r\nnode:events:505\r\n    throw er; // Unhandled \u0027error\u0027 event\r\n    ^\r\n\r\nError: listen EADDRINUSE: address already in use 0.0.0.0:3000\r\n    at Server.setupListenHandle [as _listen2] (node:net:2390:16)\r\n    at listenInCluster (node:net:2499:12)\r\n    at node:net:2728:7\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)\r\nEmitted \u0027error\u0027 event on Server instance at:\r\n    at emitErrorNT (node:net:2478:8)\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\r\n  code: \u0027EADDRINUSE\u0027,\r\n  errno: -4091,\r\n  syscall: \u0027listen\u0027,\r\n  address: \u00270.0.0.0\u0027,\r\n  port: 3000\r\n}\r\n\r\nNode.js v26.13.0\r\n",
+        "durationMs": 2770
+      }
+    ],
+    "executions": [
+      {
+        "source": "setup[0]",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "install",
+          "--no-package-lock"
+        ],
+        "cwd": "C:\\Users\\kevin\\OneDrive\\Desktop\\civicresolve",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "typescript-no-emit",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "lint"
+        ],
+        "cwd": "C:\\Users\\kevin\\OneDrive\\Desktop\\civicresolve",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "production-build",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "build"
+        ],
+        "cwd": "C:\\Users\\kevin\\OneDrive\\Desktop\\civicresolve",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "test"
+        ],
+        "cwd": "C:\\Users\\kevin\\OneDrive\\Desktop\\civicresolve",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "home-page-responds",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\node.exe",
+        "args": [
+          "node_modules/tsx/dist/cli.mjs",
+          "server.ts"
+        ],
+        "cwd": "C:\\Users\\kevin\\OneDrive\\Desktop\\civicresolve",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "api-health-responds",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\node.exe",
+        "args": [
+          "node_modules/tsx/dist/cli.mjs",
+          "server.ts"
+        ],
+        "cwd": "C:\\Users\\kevin\\OneDrive\\Desktop\\civicresolve",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "public-issues-respond",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\node.exe",
+        "args": [
+          "node_modules/tsx/dist/cli.mjs",
+          "server.ts"
+        ],
+        "cwd": "C:\\Users\\kevin\\OneDrive\\Desktop\\civicresolve",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      }
+    ]
+  }
+}

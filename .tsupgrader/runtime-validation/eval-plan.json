@@ -1,0 +1,71 @@
+{
+  "generatedAt": "2026-11-21T07:38:00+03:00",
+  "generatedOnPlatform": "win32",
+  "projectType": "webapp",
+  "setup": [
+    {
+      "command": "npm",
+      "args": ["install", "--no-package-lock"],
+      "timeoutSeconds": 600
+    }
+  ],
+  "assertions": [
+    {
+      "name": "typescript-no-emit",
+      "kind": "process",
+      "command": "npm",
+      "args": ["run", "lint"],
+      "verificationMethod": "exit-code",
+      "expected": "0",
+      "timeoutSeconds": 180
+    },
+    {
+      "name": "production-build",
+      "kind": "process",
+      "command": "npm",
+      "args": ["run", "build"],
+      "verificationMethod": "exit-code",
+      "expected": "0",
+      "timeoutSeconds": 300
+    },
+    {
+      "name": "tests-pass",
+      "kind": "process",
+      "command": "npm",
+      "args": ["test"],
+      "verificationMethod": "test-results",
+      "expected": "0",
+      "timeoutSeconds": 300
+    },
+    {
+      "name": "home-page-responds",
+      "kind": "http-probe",
+      "startCommand": "C:\\Program Files\\nodejs\\node.exe",
+      "startArgs": ["node_modules/tsx/dist/cli.mjs", "server.ts"],
+      "url": "http://127.0.0.1:3000/",
+      "verificationMethod": "http-status",
+      "expected": "200",
+      "timeoutSeconds": 60
+    },
+    {
+      "name": "api-health-responds",
+      "kind": "http-probe",
+      "startCommand": "C:\\Program Files\\nodejs\\node.exe",
+      "startArgs": ["node_modules/tsx/dist/cli.mjs", "server.ts"],
+      "url": "http://127.0.0.1:3000/api/health",
+      "verificationMethod": "http-status",
+      "expected": "200",
+      "timeoutSeconds": 60
+    },
+    {
+      "name": "public-issues-respond",
+      "kind": "http-probe",
+      "startCommand": "C:\\Program Files\\nodejs\\node.exe",
+      "startArgs": ["node_modules/tsx/dist/cli.mjs", "server.ts"],
+      "url": "http://127.0.0.1:3000/api/issues",
+      "verificationMethod": "http-status",
+      "expected": "200",
+      "timeoutSeconds": 60
+    }
+  ]
+}
